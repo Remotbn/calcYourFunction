@@ -1,0 +1,33 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  /* overflow-x: hidden; */
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+:root {
+  --primary-color: #9e47da;
+  --primary-textcolor: #ffffff;
+  --secondary-textcolor: #a8a8a8;
+  --main-background: #2c2c2c;
+  --section-padding: 13rem;
+}

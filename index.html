@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/dynamic.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
+    <link rel="stylesheet" href="css/root.css" />
+    <script defer src="app.js"></script>
+    <title>calcYourFunction</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="flex align-center header-layout">
+        <div class="logo-layout">
+          <div class="header-item">calcYourFunction</div>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li>features</li>
+            <li>über uns</li>
+            <li>hilfe</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hero-section">
+      <div class="wrapper">
+        <div class="container">
+          <div class="left">
+            <h1 class="heading-primary">
+              Kurvendiskussion auf <span>einen Blick</span>
+            </h1>
+
+            <div class="cta-container">
+              <h4 class="cta-heading">Starte deine Berechnung</h4>
+              <form class="fx-form">
+                <span class="fx-form-static">f(x)</span>
+                <span class="fx-form-static">=</span>
+                <input
+                  type="number"
+                  placeholder="a"
+                  class="input-function"
+                  id="input-a"
+                />
+                <span class="fx-form-static">x<sup>2</sup></span>
+                <span class="fx-form-static">+</span>
+                <input
+                  type="number"
+                  placeholder="b"
+                  class="input-function"
+                  id="input-b"
+                />
+                <span class="fx-form-static">x</span>
+                <span class="fx-form-static">+</span>
+                <input
+                  type="number"
+                  placeholder="c"
+                  class="input-function"
+                  id="input-c"
+                />
+                <button class="btn-submit">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M14.6562 6.125L22.5312 14L14.6562 21.875M21.4375 14H5.46875"
+                      stroke="#9700FF"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="error-container">
+              <div class="error-layout">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M14.1621 8C14.1621 4.6875 11.4746 2 8.16211 2C4.84961 2 2.16211 4.6875 2.16211 8C2.16211 11.3125 4.84961 14 8.16211 14C11.4746 14 14.1621 11.3125 14.1621 8Z"
+                    stroke="#DA4747"
+                    stroke-width="1.2"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M7.78388 5.18903L7.96325 8.99997L8.14231 5.18903C8.14342 5.16467 8.13955 5.14034 8.13093 5.11752C8.12231 5.09471 8.10913 5.07389 8.0922 5.05634C8.07526 5.03879 8.05493 5.02488 8.03244 5.01546C8.00994 5.00603 7.98576 5.0013 7.96138 5.00153C7.93728 5.00176 7.91347 5.00684 7.89138 5.01647C7.86929 5.0261 7.84937 5.04008 7.8328 5.05759C7.81624 5.07509 7.80337 5.09574 7.79496 5.11833C7.78655 5.14091 7.78278 5.16496 7.78388 5.18903Z"
+                    stroke="#DA4747"
+                    stroke-width="1.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.97632 11.4972C7.85271 11.4972 7.73187 11.4605 7.62909 11.3919C7.52631 11.3232 7.4462 11.2256 7.39889 11.1114C7.35159 10.9972 7.33921 10.8715 7.36333 10.7503C7.38744 10.629 7.44697 10.5177 7.53438 10.4303C7.62178 10.3428 7.73315 10.2833 7.85439 10.2592C7.97563 10.2351 8.10129 10.2475 8.2155 10.2948C8.3297 10.3421 8.42731 10.4222 8.49599 10.525C8.56466 10.6277 8.60132 10.7486 8.60132 10.8722C8.60132 11.038 8.53547 11.1969 8.41826 11.3141C8.30105 11.4313 8.14208 11.4972 7.97632 11.4972Z"
+                    fill="#DA4747"
+                  />
+                </svg>
+                <label>Gebe eine valide Funktion ein</label>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="svg-container">
+              <svg
+                width="851"
+                height="812"
+                viewBox="0 0 851 812"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_38_150)">
+                  <path
+                    d="M692.279 235.584L461.295 84.5741C443.071 72.6598 418.639 77.7748 406.725 95.9989L169.424 458.973C157.51 477.197 162.625 501.629 180.849 513.543L411.832 664.553C430.056 676.467 454.488 671.352 466.403 653.128L703.704 290.154C715.618 271.93 710.503 247.498 692.279 235.584Z"
+                    stroke="#333333"
+                    stroke-width="32"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M434.659 161.362L632.634 290.793L589.489 356.788L391.513 227.358L434.659 161.362Z"
+                    stroke="#333333"
+                    stroke-width="32"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M335.034 331.737C348.702 340.673 367.026 336.837 375.962 323.169C384.897 309.5 381.061 291.176 367.393 282.241C353.725 273.305 335.401 277.141 326.465 290.809C317.529 304.477 321.366 322.801 335.034 331.737Z"
+                    fill="#333333"
+                  />
+                  <path
+                    d="M425.777 391.062C439.445 399.998 457.769 396.162 466.705 382.494C475.641 368.826 471.804 350.502 458.136 341.566C444.468 332.63 426.144 336.466 417.209 350.135C408.273 363.803 412.109 382.127 425.777 391.062Z"
+                    fill="#333333"
+                  />
+                  <path
+                    d="M516.521 450.388C530.189 459.323 548.513 455.487 557.449 441.819C566.384 428.151 562.548 409.827 548.88 400.891C535.212 391.955 516.888 395.792 507.952 409.46C499.016 423.128 502.853 441.452 516.521 450.388Z"
+                    fill="#333333"
+                  />
+                  <path
+                    d="M281.102 414.231C294.77 423.167 313.094 419.331 322.029 405.663C330.965 391.995 327.129 373.671 313.461 364.735C299.793 355.799 281.469 359.635 272.533 373.303C263.597 386.971 267.434 405.295 281.102 414.231Z"
+                    fill="#333333"
+                  />
+                  <path
+                    d="M371.845 473.556C385.513 482.492 403.837 478.656 412.773 464.988C421.709 451.32 417.873 432.996 404.205 424.06C390.536 415.124 372.212 418.961 363.277 432.629C354.341 446.297 358.177 464.621 371.845 473.556Z"
+                    fill="#333333"
+                  />
+                  <path
+                    d="M227.17 496.725C240.838 505.661 259.162 501.825 268.098 488.157C277.033 474.489 273.197 456.165 259.529 447.229C245.861 438.293 227.537 442.129 218.601 455.797C209.665 469.466 213.502 487.79 227.17 496.725Z"
+                    fill="#333333"
+                  />
+                  <path
+                    d="M317.913 556.051C331.581 564.986 349.905 561.15 358.841 547.482C367.777 533.814 363.94 515.49 350.272 506.554C336.604 497.618 318.28 501.455 309.345 515.123C300.409 528.791 304.245 547.115 317.913 556.051Z"
+                    fill="#333333"
+                  />
+                  <path
+                    d="M503.517 524.313C512.452 510.645 508.616 492.321 494.948 483.385C481.28 474.449 462.956 478.286 454.02 491.954L400.088 574.448C391.152 588.116 394.989 606.44 408.657 615.376C422.325 624.312 440.649 620.475 449.585 606.807L503.517 524.313Z"
+                    fill="#333333"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_38_150">
+                    <rect
+                      width="630.78"
+                      height="630.78"
+                      fill="white"
+                      transform="translate(345.165 -62) rotate(33.1754)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-output">
+      <div class="overlay">
+        <div class="center">
+          <div class="warning">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="37"
+              height="37"
+              viewBox="0 0 37 37"
+              fill="none"
+            >
+              <path
+                d="M32.75 18.5C32.75 10.8398 26.5352 4.625 18.875 4.625C11.2148 4.625 5 10.8398 5 18.5C5 26.1602 11.2148 32.375 18.875 32.375C26.5352 32.375 32.75 26.1602 32.75 18.5Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-miterlimit="10"
+              />
+              <path
+                d="M18.0004 11.9997L18.4152 20.8124L18.8293 11.9997C18.8319 11.9433 18.8229 11.887 18.803 11.8343C18.7831 11.7815 18.7526 11.7334 18.7134 11.6928C18.6743 11.6522 18.6272 11.6201 18.5752 11.5983C18.5232 11.5765 18.4673 11.5655 18.4109 11.5661C18.3552 11.5666 18.3001 11.5783 18.249 11.6006C18.198 11.6229 18.1519 11.6552 18.1136 11.6957C18.0753 11.7361 18.0455 11.7839 18.0261 11.8361C18.0066 11.8884 17.9979 11.944 18.0004 11.9997Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M18.4453 26.5873C18.1595 26.5873 17.88 26.5025 17.6423 26.3437C17.4047 26.1849 17.2194 25.9592 17.11 25.6951C17.0006 25.431 16.972 25.1404 17.0278 24.86C17.0835 24.5796 17.2212 24.3221 17.4233 24.12C17.6255 23.9178 17.883 23.7802 18.1633 23.7244C18.4437 23.6687 18.7343 23.6973 18.9984 23.8067C19.2625 23.9161 19.4882 24.1013 19.647 24.339C19.8059 24.5767 19.8906 24.8561 19.8906 25.142C19.8906 25.5253 19.7384 25.8929 19.4673 26.164C19.1963 26.435 18.8286 26.5873 18.4453 26.5873Z"
+                fill="white"
+              />
+            </svg>
+            <label>Gebe zuerst eine Funktion ein</label>
+          </div>
+        </div>
+      </div>
+      <h2 class="heading-secondary">Deine Funktion...</h2>
+      <div class="output-cards">
+        <div class="card">
+          <p class="card-description">
+            hat einen <span>Y-Achsenabschnitt</span> bei
+          </p>
+          <div class="output">
+            <span>S<sub>y</sub> = (0/<span id="output-yaxis">0</span>)</span>
+          </div>
+        </div>
+        <div class="card">
+          <p class="card-description">zwei <span>Nullstelle(n)</span> bei</p>
+          <div class="output">
+            <span>x<sub>1</sub> = (<span id="output-xaxis--1">0</span>/0)</span
+            ><br />
+            <span>x<sub>2</sub> = (<span id="output-xaxis--2">0</span>/0)</span>
+          </div>
+        </div>
+        <div class="card">
+          <p class="card-description">einen <span>Scheitelpunkt</span> bei</p>
+          <div class="output">
+            <span>SP = (10/10)</span>
+          </div>
+        </div>
+        <div class="card">
+          <p class="card-description">strebt von</p>
+          <div class="output">
+            <span>+x</span> <span>--></span> <span>+y</span><br />
+            <span>-x</span> <span>--></span> <span>-y</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
